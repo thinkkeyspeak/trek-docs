@@ -1,52 +1,26 @@
 ---
 title: "School System Integrations"
-description: "Connect Trek to your school's SIS, SSO, and rostering platforms."
+sidebarTitle: "Connect your school systems"
+description: "Connect Trek to your school roster and student information systems."
 ---
 
-Trek integrates with the most common school information systems and identity providers to simplify rostering and login.
+Trek supports two methods for integrating with school systems.
 
-## Supported integrations
+## Integration options
 
-| Platform | Rostering | Single Sign-On |
-| --- | --- | --- |
-| Clever | ✓ | ✓ |
-| ClassLink | ✓ | ✓ |
-| Google Workspace for Education | ✓ | ✓ |
-| Microsoft Azure AD / Entra ID | — | ✓ |
-| Canvas (LTI 1.3) | ✓ | ✓ |
-| Schoology (LTI 1.3) | ✓ | ✓ |
+| Method | Best for |
+| --- | --- |
+| **EdLink** | Most student information systems (SIS). Preferred and most common among Trek partner schools. |
+| **Bulk CSV upload** | Districts that export rosters from their SIS and upload files to Trek |
 
-## Setting up Clever
+## EdLink (recommended)
 
-1. Log in to your Clever district dashboard.
-2. Navigate to **Applications** and search for **Trek**.
-3. Click **Add application** and follow the OAuth authorization flow.
-4. In Trek, go to **Admin → Integrations → Clever** and paste your Clever District ID.
-5. Trigger an initial sync or wait for the nightly automatic sync.
+EdLink works with most SIS platforms. Contact your administrator or the Trek team to enable EdLink for your school.
 
-## Setting up ClassLink
+## CSV roster upload
 
-1. In your ClassLink district console, go to **App Library** and find **Trek**.
-2. Enable the application and configure the rostering scope (students, staff, or both).
-3. In Trek, go to **Admin → Integrations → ClassLink** and enter your tenant URL.
-4. Save and run a test sync to confirm data is flowing correctly.
+If your school uses CSV upload, coordinate with your admin on file format and upload schedule so rosters stay current.
 
-## Setting up Google Workspace SSO
-
-1. In your Google Admin console, go to **Apps → Web and mobile apps → Add app**.
-2. Search for **Trek** or add a custom SAML app using Trek's metadata URL.
-3. Map the required attributes: `email`, `first_name`, `last_name`, `student_id`.
-4. In Trek, enable **Google SSO** under **Admin → Integrations → Single Sign-On**.
-
-## Sync frequency
-
-- Automatic syncs run nightly at 2:00 AM in the district's configured timezone.
-- Manual syncs can be triggered at any time from **Admin → Integrations → \[Integration name\] → Sync now**.
-
-<Warning>
-  Removing a student from your SIS will deactivate their Trek account on the next sync. Their data is retained for 90 days before permanent deletion.
-</Warning>
-
-## Troubleshooting
-
-If a sync fails, check the sync log at **Admin → Integrations → Sync history** for error details. Common causes include expired OAuth tokens, changed API credentials, or firewall rules blocking Trek's IP ranges.
+<Card title="Set up student rostering" icon="users" href="/getting-started/student-rostering-requirements">
+  Required roster fields and email addresses for students.
+</Card>

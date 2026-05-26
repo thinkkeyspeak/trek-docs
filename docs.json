@@ -8,7 +8,7 @@
     "light": "#6BA8EB",
     "dark": "#1A5099"
   },
-  "favicon": "/favicon.ico",
+  "favicon": "/favicon.png",
   "icons": {
     "library": "lucide"
   },
@@ -31,13 +31,43 @@
         ]
       },
       {
-        "group": "Teacher Guide",
+        "group": "Sign in",
         "pages": [
+          "account/sign-in-with-sso",
+          "account/resend-login-emails"
+        ]
+      },
+      {
+        "group": "Teach with Trek",
+        "pages": [
+          "teacher-guide/best-practices-for-rolling-out-trek-to-students",
           "teacher-guide/project-based-learning-support",
           "teacher-guide/tools-for-differentiated-instruction",
           "teacher-guide/using-trek-for-math-instruction",
-          "teacher-guide/best-practices-for-rolling-out-trek-to-students",
+          "teacher-guide/feedback-on-student-uploaded-papers",
+          "teacher-guide/ap-test-preparation-support",
           "teacher-guide/proofreading-options-in-trek"
+        ]
+      },
+      {
+        "group": "Learn with Trek",
+        "pages": [
+          "student-guide/grade-levels-supported-by-trek",
+          "student-guide/student-success-across-grade-levels",
+          "student-guide/journaling-in-trek",
+          "student-guide/content-sources-in-trek",
+          "student-guide/ai-models-used-by-trek",
+          "student-guide/reduced-hallucination-rates"
+        ]
+      },
+      {
+        "group": "Privacy & safety",
+        "pages": [
+          "trust-and-safety/data-privacy-and-security",
+          "trust-and-safety/ai-detection-and-academic-integrity",
+          "trust-and-safety/managing-feature-access-for-students",
+          "trust-and-safety/daily-chat-limits",
+          "trust-and-safety/removing-sensitive-data-from-trek"
         ]
       }
     ]

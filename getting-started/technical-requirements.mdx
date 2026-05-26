@@ -1,71 +1,21 @@
 ---
 title: "Technical Requirements"
-description: "Hardware, software, network, and browser requirements for using Trek."
+sidebarTitle: "Check technical requirements"
+description: "Browsers and devices supported by Trek."
 ---
 
-Review these requirements before deploying Trek to ensure a smooth experience for students and teachers.
-
-## Supported devices
-
-| Device type | Minimum specs |
-| --- | --- |
-| Chromebook | Chrome OS 107 or later; 4 GB RAM recommended |
-| Windows laptop/desktop | Windows 10 or later; 4 GB RAM; dual-core processor |
-| Mac | macOS 12 (Monterey) or later; 4 GB RAM |
-| iPad | iPadOS 15 or later |
-| Android tablet | Android 10 or later; 4 GB RAM |
-
-<Note>
-  Trek is optimized for Chromebooks and is commonly deployed in 1:1 Chromebook environments.
-</Note>
+Trek is a **fully web-based platform**. No software installation is required on student or teacher devices.
 
 ## Supported browsers
 
-- **Google Chrome** (version 107\+) — recommended
-- **Microsoft Edge** (version 107\+)
-- **Safari** (version 15\+)
-- **Mozilla Firefox** (version 105\+)
+Trek works on all modern browsers, including:
 
-Browser extensions that block JavaScript or third-party cookies may interfere with Trek. Students should use a managed browser profile where possible.
+- **Google Chrome**
+- **Safari**
+- **Mozilla Firefox**
 
-## Network requirements
+Use the latest browser version your district supports for the best experience.
 
-### Bandwidth
-
-- Minimum: 1 Mbps per concurrent user
-- Recommended: 5 Mbps per concurrent user for rich media content
-
-### Allowlisted domains
-
-Ensure the following domains are allowlisted in your network firewall and content filter:
-
-```text
-*.treklearning.com
-*.google.com (if using Google SSO)
-*.googleapis.com
-*.gstatic.com
-fonts.googleapis.com
-fonts.gstatic.com
-```
-
-### Ports
-
-- HTTPS (TCP 443) — required
-- HTTP (TCP 80) — redirects to HTTPS; can be blocked if needed
-
-## Accessibility
-
-Trek meets WCAG 2.1 AA standards. Built-in features include:
-
-- Screen reader support (NVDA, JAWS, VoiceOver)
-- Keyboard-only navigation
-- High-contrast mode
-- Adjustable text size
-
-## IT checklist
-
-- Devices meet minimum hardware requirements
-- Supported browser installed and up to date
-- Trek domains allowlisted in firewall and content filter
-- Student accounts rostered (see [Student Rostering Requirements](/getting-started/student-rostering-requirements))
-- SIS or SSO integration configured (see [School System Integrations](/getting-started/school-system-integrations))
+<Note>
+  If students cannot load Trek, check that your school network allows access to Trek domains and that pop-up or content filters are not blocking the site.
+</Note>
