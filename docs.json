@@ -1,51 +1,73 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "mint",
   "name": "Trek Documentation",
   "description": "Step-by-step guides for everything you want to do in Trek",
   "colors": {
-    "primary": "#1F33CC",
-    "light": "#6d7cf3",
-    "dark": "#051697"
+    "primary": "#246BD4",
+    "light": "#6BA8EB",
+    "dark": "#1A5099"
   },
-  "favicon": "/favicon.ico",
+  "favicon": "/favicon.png",
   "icons": {
     "library": "lucide"
   },
   "styling": {
-    "eyebrows": "breadcrumbs"
+    "eyebrows": "section"
   },
   "contextual": {
     "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
   },
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Home",
-          "icon": "house",
-          "href": "/"
-        }
-      ]
-    },
     "directory": "card",
     "groups": [
       {
-        "group": "Getting Started",
+        "group": "Get Started",
         "pages": [
+          "index",
           "getting-started/student-rostering-requirements",
           "getting-started/school-system-integrations",
           "getting-started/technical-requirements"
         ]
       },
       {
-        "group": "Teacher Guide",
+        "group": "Sign in",
         "pages": [
+          "account/sign-in-with-sso",
+          "account/resend-login-emails"
+        ]
+      },
+      {
+        "group": "Teach with Trek",
+        "pages": [
+          "teacher-guide/best-practices-for-rolling-out-trek-to-students",
           "teacher-guide/project-based-learning-support",
           "teacher-guide/tools-for-differentiated-instruction",
           "teacher-guide/using-trek-for-math-instruction",
-          "teacher-guide/best-practices-for-rolling-out-trek-to-students",
+          "teacher-guide/feedback-on-student-uploaded-papers",
+          "teacher-guide/ap-test-preparation-support",
           "teacher-guide/proofreading-options-in-trek"
+        ]
+      },
+      {
+        "group": "Learn with Trek",
+        "pages": [
+          "student-guide/grade-levels-supported-by-trek",
+          "student-guide/student-success-across-grade-levels",
+          "student-guide/journaling-in-trek",
+          "student-guide/content-sources-in-trek",
+          "student-guide/ai-models-used-by-trek",
+          "student-guide/reduced-hallucination-rates"
+        ]
+      },
+      {
+        "group": "Privacy & safety",
+        "pages": [
+          "trust-and-safety/data-privacy-and-security",
+          "trust-and-safety/ai-detection-and-academic-integrity",
+          "trust-and-safety/managing-feature-access-for-students",
+          "trust-and-safety/daily-chat-limits",
+          "trust-and-safety/removing-sensitive-data-from-trek"
         ]
       }
     ]
@@ -53,7 +75,7 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
-    "href": "/logo/logo.png"
+    "href": "/"
   },
   "navbar": {
     "links": [],
@@ -71,9 +93,5 @@
   },
   "appearance": {
     "default": "system"
-  },
-  "fonts": {
-    "family": "Open Sans",
-    "weight": 400
   }
 }

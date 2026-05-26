@@ -1,50 +1,20 @@
 ---
 title: "Student Rostering Requirements"
-description: "Requirements and steps for rostering students in Trek."
+sidebarTitle: "Set up student rostering"
+description: "What your school needs to provide to roster students in Trek."
 ---
 
-This page covers what you need to successfully roster students in Trek.
+To roster students in Trek, your school must provide **student rosters** and **student email addresses**.
 
-## Overview
+## How rostering works
 
-Student rostering ensures each student has an account and is assigned to the correct class sections within Trek. Before starting, confirm that your school system integration is active and that you have the necessary administrative permissions.
+Schools can:
 
-## Required information
+- **Manage rosters directly** in Trek, or
+- **Send roster files** to the Trek team for processing and upload
 
-To roster students, you will need:
+Work with your administrator to confirm which method your district uses before students need access.
 
-- **Student ID** — A unique identifier for each student (typically the state or district student ID).
-- **First and last name** — As they appear in your student information system (SIS).
-- **Grade level** — Used to assign appropriate content and difficulty.
-- **Email address** — A valid school-issued email address for account creation.
-- **Class/section assignment** — The course or section the student belongs to.
-
-## Rostering methods
-
-Trek supports three rostering methods:
-
-### Automatic sync via SIS integration
-
-If your district uses Clever, ClassLink, or a direct SIS integration, students are rostered automatically. See [School System Integrations](/getting-started/school-system-integrations) for setup details.
-
-### CSV upload
-
-1. Download the Trek rostering CSV template from **Admin → Rostering → Import**.
-2. Fill in the required columns: `student_id`, `first_name`, `last_name`, `grade`, `email`, `section_id`.
-3. Upload the completed file and review the validation summary before confirming.
-
-### Manual entry
-
-For small groups or individual students, go to **Admin → Students → Add Student** and complete the form.
-
-## Common issues
-
-| Issue | Resolution |
-| --- | --- |
-| Duplicate student ID | Confirm the student isn't already in the system; merge accounts if needed. |
-| Invalid email format | Ensure the email follows the district's standard format. |
-| Missing section assignment | Verify that the section exists before re-uploading. |
-
-<Note>
-  Students will receive a welcome email with login instructions once their account is created. Verify that school email filters allow messages from Trek.
-</Note>
+<Card title="Connect your school systems" icon="plug" href="/getting-started/school-system-integrations">
+  CSV upload and EdLink SIS integration options.
+</Card>

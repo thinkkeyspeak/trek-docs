@@ -1,134 +1,105 @@
 ---
-title: Home
-description: Everything you need to set up, configure, and get the most out of Platform, Analytics, and Integrations tools.
-mode: frame
+title: Introduction
+description: Step-by-step guides for everything you want to do in Trek
 ---
 
-<div data-product-guide-index className="flex w-full flex-col gap-8 max-w-5xl mx-auto px-4 md:px-8 lg:px-12 py-10 lg:gap-14 lg:py-16">
-  <div className="flex max-w-[540px] flex-col gap-2 self-center text-center">
-    <h1 className="text-[30px] font-medium leading-9 tracking-tight text-gray-900 dark:text-gray-50">
-      Product Guide
-    </h1>
-    <p className="text-balance text-base leading-relaxed tracking-tight text-gray-600 dark:text-gray-400">
-      Everything you need to set up, configure, and get the most out of Platform, Analytics, and Integrations tools.
-    </p>
-  </div>
+<img
+  className="w-full rounded-xl"
+  src="/images/blue-bg-wave.svg"
+  alt=""
+/>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-    <Card
-      title={<span className="product-guide-feature-card-title">Platform overview</span>}
-      icon="chart-no-axes-gantt"
-      href="/platform"
-      className="product-guide-feature-card"
-      size={64}
-    >
-      <span className="product-guide-feature-card-description">Setup, configure, and manage your workspace.</span>
-    </Card>
+## Set up your school
 
-    <a
-      href="/analytics"
-      className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-    >
-      <Icon icon="chart-column" color="rgb(var(--primary))" size={18} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Analytics</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-          Build, report, and visualize your data.
-        </span>
-      </div>
-    </a>
-    <a
-      href="/integrations"
-      className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-    >
-      <Icon icon="code-xml" color="rgb(var(--primary))" size={18} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Integrations</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-          Ready-to-use connectors for common platforms and flexible webhooks.
-        </span>
-      </div>
-    </a>
-  </div>
+For administrators and IT rolling out Trek.
 
-  <hr className="border-0 border-t border-border" />
+<Columns cols={2}>
+  <Card
+    title="Set up student rostering"
+    icon="users"
+    href="/getting-started/student-rostering-requirements"
+  >
+    Roster students and assign class sections.
+  </Card>
+  <Card
+    title="Connect your school systems"
+    icon="plug"
+    href="/getting-started/school-system-integrations"
+  >
+    Clever, ClassLink, Google, Microsoft, and LMS integrations.
+  </Card>
+  <Card
+    title="Check technical requirements"
+    icon="shield-check"
+    href="/getting-started/technical-requirements"
+  >
+    Network, browser, and device requirements.
+  </Card>
+  <Card
+    title="Sign in with SSO"
+    icon="key"
+    href="/account/sign-in-with-sso"
+  >
+    Log in with Google or Microsoft school accounts.
+  </Card>
+</Columns>
 
-  <div className="flex flex-col gap-4">
-    <h2 className="font-serif text-xl font-medium leading-normal text-gray-900 dark:text-gray-50">Common tasks</h2>
+## Teach with Trek
 
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-      <a
-        href="/platform/configuration/user-management"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="users" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Manage your team</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Add members, assign roles, and control access across your workspace.
-          </span>
-        </div>
-      </a>
-      <a
-        href="/analytics/connect-data"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="database" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Connect a data source</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Link a database, data warehouse, or third-party data provider.
-          </span>
-        </div>
-      </a>
-      <a
-        href="/integrations/connectors/crm"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="building-2" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Connect your CRM</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Sync your CRM through native connectors or a custom strategy.
-          </span>
-        </div>
-      </a>
-      <a
-        href="/analytics/dashboards/create-dashboard"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="layout-dashboard" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Build a dashboard</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Add charts, set filters, and share a live dashboard.
-          </span>
-        </div>
-      </a>
-      <a
-        href="/integrations/webhooks/configure"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="webhook" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Set up a webhook</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Subscribe to events and route them to any endpoint.
-          </span>
-        </div>
-      </a>
-      <a
-        href="/analytics/reports/scheduled-reports"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="calendar-clock" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Schedule a report</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Send recurring snapshots via email or Slack.
-          </span>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
+For teachers building lessons, giving feedback, and rolling out to classes.
+
+<Card
+  title="Roll out Trek to your class"
+  icon="rocket"
+  href="/teacher-guide/best-practices-for-rolling-out-trek-to-students"
+  horizontal
+>
+  Start here if Trek is new in your classroom.
+</Card>
+
+<Columns cols={2}>
+  <Card title="Support project-based learning" icon="lightbulb" href="/teacher-guide/project-based-learning-support">
+    Driving questions, milestones, and rubrics.
+  </Card>
+  <Card title="Differentiate instruction" icon="layers" href="/teacher-guide/tools-for-differentiated-instruction">
+    Tools for varied readiness and learning needs.
+  </Card>
+  <Card title="Teach math with Trek" icon="calculator" href="/teacher-guide/using-trek-for-math-instruction">
+    Math-specific strategies and activities.
+  </Card>
+  <Card title="Give feedback on student uploads" icon="message-square" href="/teacher-guide/feedback-on-student-uploaded-papers">
+    Automated feedback on student-written work.
+  </Card>
+</Columns>
+
+## Students & families
+
+For learners and parents who want to understand how Trek works.
+
+<Columns cols={2}>
+  <Card title="See which grades Trek supports" icon="graduation-cap" href="/student-guide/grade-levels-supported-by-trek">
+    Grade ranges and accessibility features.
+  </Card>
+  <Card title="Review data privacy" icon="lock" href="/trust-and-safety/data-privacy-and-security">
+    COPPA, FERPA, and how your data is protected.
+  </Card>
+  <Card title="Know where answers come from" icon="book-open" href="/student-guide/content-sources-in-trek">
+    Accredited materials behind Trek responses.
+  </Card>
+  <Card title="Resend login emails" icon="mail" href="/account/resend-login-emails">
+    Can't sign in? Admins can send a new login link.
+  </Card>
+</Columns>
+
+## Privacy & safety
+
+For administrators and families reviewing trust and compliance.
+
+<Columns cols={2}>
+  <Card title="Maintain academic integrity" icon="scale" href="/trust-and-safety/ai-detection-and-academic-integrity">
+    Integrity without unreliable AI detection.
+  </Card>
+  <Card title="Control student feature access" icon="toggle-left" href="/trust-and-safety/managing-feature-access-for-students">
+    Enable or disable tools by grade or student.
+  </Card>
+</Columns>
