@@ -1,38 +1,30 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "mint",
   "name": "Trek Documentation",
   "description": "Step-by-step guides for everything you want to do in Trek",
   "colors": {
-    "primary": "#1F33CC",
-    "light": "#6d7cf3",
-    "dark": "#051697"
+    "primary": "#246BD4",
+    "light": "#6BA8EB",
+    "dark": "#1A5099"
   },
   "favicon": "/favicon.ico",
   "icons": {
     "library": "lucide"
   },
   "styling": {
-    "eyebrows": "breadcrumbs"
+    "eyebrows": "section"
   },
   "contextual": {
     "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
   },
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Home",
-          "icon": "house",
-          "href": "/"
-        }
-      ]
-    },
     "directory": "card",
     "groups": [
       {
-        "group": "Getting Started",
+        "group": "Get Started",
         "pages": [
+          "index",
           "getting-started/student-rostering-requirements",
           "getting-started/school-system-integrations",
           "getting-started/technical-requirements"
@@ -53,7 +45,7 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
-    "href": "/logo/logo.png"
+    "href": "/"
   },
   "navbar": {
     "links": [],
@@ -71,9 +63,5 @@
   },
   "appearance": {
     "default": "system"
-  },
-  "fonts": {
-    "family": "Open Sans",
-    "weight": 400
   }
 }
