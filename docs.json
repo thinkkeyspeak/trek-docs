@@ -25,7 +25,7 @@
         "group": "Get Started",
         "pages": [
           "index",
-          "getting-started/onboarding-new",
+          "getting-started/onboarding",
           "getting-started/student-rostering-requirements",
           "getting-started/school-system-integrations",
           "getting-started/technical-requirements"
