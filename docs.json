@@ -25,7 +25,71 @@
         "group": "Orientation",
         "pages": [
           "technical-requirements",
-          "rollout-resources"
+          "account-setup",
+          "rollout-resources",
+          "ai-readiness"
+        ]
+      },
+      {
+        "group": "Build Your Community",
+        "pages": [
+          "building-engagement",
+          "building",
+          "ai-and-hallucinations",
+          "data-privacy"
+        ]
+      },
+      {
+        "group": "Design Your Direction",
+        "pages": [
+          "schedules-and-structures",
+          "using-trek-for-reading",
+          "project-based-learning-resources"
+        ]
+      },
+      {
+        "group": "Navigate Your Data",
+        "pages": [
+          "grading-resources",
+          "differentiation-resources"
+        ]
+      },
+      {
+        "group": "Lead the Experience",
+        "pages": [
+          "small-group-resources"
+        ]
+      },
+      {
+        "group": "Grow Your Guide",
+        "pages": [
+          "trek-ai-teacher-certifcation",
+          "trek-ai-ideas-from-educators"
+        ]
+      },
+      {
+        "group": "Always Improving",
+        "pages": [
+          "whats-coming-for-2026-2027"
+        ]
+      },
+      {
+        "group": "Resource Hub",
+        "pages": [
+          "video-hub",
+          "faqs",
+          {
+            "group": "Student Hub",
+            "pages": [
+              "untitled-page"
+            ]
+          },
+          {
+            "group": "Teacher and Leader Hub",
+            "pages": [
+              "teacher-and-leader-resources"
+            ]
+          }
         ]
       }
     ]
