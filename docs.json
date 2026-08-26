@@ -20,12 +20,13 @@
   },
   "navigation": {
     "directory": "card",
-    "pages": [
+    "groups": [
       {
         "group": "Orientation",
         "pages": [
           "technical-requirements",
-          "account-setup"
+          "account-setup",
+          "ai-readiness"
         ]
       },
       {
@@ -56,8 +57,7 @@
           "faqs",
           "untitled-page-7"
         ]
-      },
-      "ai-readiness"
+      }
     ]
   },
   "logo": {
