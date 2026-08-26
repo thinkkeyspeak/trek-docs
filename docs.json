@@ -20,7 +20,7 @@
   },
   "navigation": {
     "directory": "card",
-    "groups": [
+    "pages": [
       {
         "group": "Orientation",
         "pages": [
@@ -56,7 +56,8 @@
           "faqs",
           "untitled-page-7"
         ]
-      }
+      },
+      "ai-readiness"
     ]
   },
   "logo": {
