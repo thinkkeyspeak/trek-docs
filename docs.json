@@ -25,14 +25,12 @@
         "group": "Orientation",
         "pages": [
           "technical-requirements",
-          "account-setup",
-          "ai-readiness"
+          "account-setup"
         ]
       },
       {
         "group": "Getting Started",
         "pages": [
-          "ai-readiness",
           "rollout-resources",
           "building-engagement",
           "trek-ai-ideas-from-educators"
