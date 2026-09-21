@@ -80,5 +80,8 @@
   },
   "appearance": {
     "default": "system"
+  },
+  "thumbnails": {
+    "background": "/images/TrekLearningwhitelettersverticalclearbackgroundlogo(1).png"
   }
 }
