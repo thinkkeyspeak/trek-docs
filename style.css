@@ -1,4 +1,21 @@
+/* Navbar logo size */
 img.nav-logo {
   max-width: 220px;
   height: auto;
+}
+
+/* Keep sidebar group headers visible in light mode */
+html:not(.dark) sidebar-group-header,
+html:not(.dark) sidebar-group-header *,
+html:not(.dark) #sidebar h5,
+html:not(.dark) #sidebar h5 * {
+  color: #111827 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Push the first sidebar heading below the navbar */
+#sidebar-content {
+  padding-top: 1.5rem !important;
 }
