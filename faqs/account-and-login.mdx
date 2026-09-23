@@ -1,3 +1,47 @@
 ---
 title: "Account & Login"
 ---
+
+<AccordionGroup>
+  <Accordion title="Is there a way to prompt the system to resend the login email?">
+    Yes! As a school admin, you can resend login emails. Navigate to Users > Pencil icon next to the student's name > Reset password.
+  </Accordion>
+
+  <Accordion title="Does Trek Learning support single sign-on?">
+    Yes! We have both Google and Microsoft Single Sign-On. No matter what LMS/SIS you sync with, you will be able to SSO with Google or Microsoft.
+  </Accordion>
+
+  <Accordion title="Is my data secure?">
+    Absolutely! We're COPPA and FERPA compliant. Everything you put into Trek is yours and not ours. We do not use it to train any other models and any agreements we have with providers say they will not use it to train their models. We don't sell data and we don't use anything you upload to train other models. We're pretty tight on all data privacy.
+  </Accordion>
+
+  <Accordion title="How can I increase the number of user accounts (licenses) for my school?">
+    To request additional user accounts or licenses, please contact your Partner Success Manager. They'll guide you through the process and help adjust your plan based on your school or district's needs.
+  </Accordion>
+
+  <Accordion title="What roles are available in my Trek Learning account?">
+    Trek Learning offers several user roles: School Admin, IT Admin, Teacher, and Student. Each role includes specific permissions and access levels to ensure the platform is used effectively and securely within your school or district.
+  </Accordion>
+
+  <Accordion title="How do we add or remove admins?">
+    Users with School Admin access can manage admin permissions in the Admin Dashboard. To update a user's role, navigate to Admin in the left-hand menu, select All Users, then click Edit User next to the appropriate name. From there, update the user's role under User Role and save your changes.
+  </Accordion>
+
+  <Accordion title="Our students don't have email addresses. Can they still get Trek Learning accounts?">
+    Inform your Partner Success Specialist, and they will provide an alternative login solution so your students can access Trek Learning.
+  </Accordion>
+
+  <Accordion title="Why can't users log in? (Google error) ">
+    In Google Workspace for Education, students are blocked from third-party apps until the exact OAuth client used for Trek’s Google login is configured as Trusted for their organizational unit.
+
+    Here's how to fix it:
+
+    1. Go to Google Admin console → **Security → Access and data control → API controls → Manage Third-Party Access**.
+    2. Configure by **OAuth Client ID**. This is Trek's: [123576902546-m2fl21553v6hvlifkh1t10slg4d2fsht.apps.googleusercontent.com](http://123576902546-m2fl21553v6hvlifkh1t10slg4d2fsht.apps.googleusercontent.com)
+    3. Set **Trusted**, and apply to **student OUs** (or the whole organization).
+  </Accordion>
+
+  <Accordion title="How can I reset student passwords?">
+    See this video [tutorial](https://www.loom.com/share/d4fed629365c4e989471342cbbf6e1d5) if one or all students need passwords reset.
+  </Accordion>
+</AccordionGroup>
