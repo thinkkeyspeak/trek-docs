@@ -53,7 +53,19 @@
         "group": "Resource Hub",
         "pages": [
           "video-hub",
-          "faqs",
+          {
+            "group": "FAQs",
+            "root": "faqs",
+            "pages": [
+              "faqs/general",
+              "faqs/account-and-login",
+              "faqs/student-onboarding-and-best-practices",
+              "faqs/features-and-functionality",
+              "faqs/integration-and-data-management",
+              "faqs/content-and-ai-model",
+              "faqs/teacher-tools-and-enhancements"
+            ]
+          },
           "untitled-page-7"
         ]
       }
