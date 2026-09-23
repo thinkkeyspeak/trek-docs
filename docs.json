@@ -22,16 +22,11 @@
     "directory": "card",
     "groups": [
       {
-        "group": "Orientation",
+        "group": "Getting Started",
         "pages": [
           "technical-requirements",
           "account-setup",
-          "ai-readiness"
-        ]
-      },
-      {
-        "group": "Getting Started",
-        "pages": [
+          "ai-readiness",
           "rollout-resources",
           "trek-ai-ideas-from-educators"
         ]
