@@ -1,21 +1,8 @@
-/* Navbar logo size */
+/* Navbar logo: show only the wordmark band of the square image */
 img.nav-logo {
-  max-width: 220px;
-  height: auto;
-}
-
-/* Keep sidebar group headers visible in light mode */
-html:not(.dark) sidebar-group-header,
-html:not(.dark) sidebar-group-header *,
-html:not(.dark) #sidebar h5,
-html:not(.dark) #sidebar h5 * {
-  color: #111827 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: block !important;
-}
-
-/* Push the first sidebar heading below the navbar */
-#sidebar-content {
-  padding-top: 1.5rem !important;
+  width: 220px !important;
+  height: 44px !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center !important;
 }
