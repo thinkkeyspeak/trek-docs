@@ -3,6 +3,33 @@ title: "Account & Login"
 ---
 
 <AccordionGroup>
+  <Accordion title="Why can't I log in with Google?">
+    In Google Workspace for Education, students are blocked from third-party apps until the exact OAuth client used for Trek’s Google login is configured as Trusted for their organizational unit.
+
+    Here's how to fix it:
+
+    1. Go to Google Admin console → **Security → Access and data control → API controls → Manage Third-Party Access**.
+    2. Configure by **OAuth Client ID**. This is Trek's: [123576902546-m2fl21553v6hvlifkh1t10slg4d2fsht.apps.googleusercontent.com](http://123576902546-m2fl21553v6hvlifkh1t10slg4d2fsht.apps.googleusercontent.com)
+    3. Set **Trusted**, and apply to **student OUs** (or the whole organization).
+  </Accordion>
+
+  <Accordion title="Why can't I log in with Microsoft?">
+    Some schools’ Microsoft 365 (Entra ID) setups block third-party apps until an admin approves them. If your school approved the Trek Classic app, you also need to approve the **Trek Learning** app. It’s a separate app with its own ID.
+
+    Users usually see a Microsoft message like “Need admin approval” or “Approval required,” or an error code starting with **AADSTS** (for example AADSTS65001, AADSTS90094 or AADSTS50105).
+
+    Here’s how to fix it (a Microsoft 365 admin needs to do this):
+
+    1. Go to the **Microsoft Entra admin center** → **Identity** → **Applications** → **Enterprise applications**.
+    2. Search for Trek’s Application (client) ID: `1975d47a-bf7b-474f-b42d-51136cb17d74`
+    3. Open the app → **Permissions** → **Grant admin consent for [your school]**, and accept.
+    4. If your school requires users to be assigned to apps, go to **Users and groups** → **Add user/group** and add your staff (and students, if they’ll use Trek).
+
+    If the app doesn’t appear in step 2, sign in to Trek once with your Microsoft admin account and choose **Consent on behalf of your organization** when Microsoft asks.
+
+    **Still can’t sign in?** Make sure you’re using the **Sign in with Microsoft** button. Accounts set up for Microsoft sign-in don’t have a Trek password. If it still fails, send us a screenshot of the error, including the AADSTS code.
+  </Accordion>
+
   <Accordion title="Is there a way to prompt the system to resend the login email?">
     Yes! As a school admin, you can resend login emails. Navigate to Users > Pencil icon next to the student's name > Reset password.
   </Accordion>
@@ -29,16 +56,6 @@ title: "Account & Login"
 
   <Accordion title="Our students don't have email addresses. Can they still get Trek Learning accounts?">
     Inform your Partner Success Specialist, and they will provide an alternative login solution so your students can access Trek Learning.
-  </Accordion>
-
-  <Accordion title="Why can't users log in? (Google error) ">
-    In Google Workspace for Education, students are blocked from third-party apps until the exact OAuth client used for Trek’s Google login is configured as Trusted for their organizational unit.
-
-    Here's how to fix it:
-
-    1. Go to Google Admin console → **Security → Access and data control → API controls → Manage Third-Party Access**.
-    2. Configure by **OAuth Client ID**. This is Trek's: [123576902546-m2fl21553v6hvlifkh1t10slg4d2fsht.apps.googleusercontent.com](http://123576902546-m2fl21553v6hvlifkh1t10slg4d2fsht.apps.googleusercontent.com)
-    3. Set **Trusted**, and apply to **student OUs** (or the whole organization).
   </Accordion>
 
   <Accordion title="How can I reset student passwords?">
