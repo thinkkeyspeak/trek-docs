@@ -6,3 +6,9 @@ img.nav-logo {
   object-fit: cover !important;
   object-position: center !important;
 }
+
+/* Hide the page contextual menu (View as Markdown / MCP dropdown) */
+#page-context-menu,
+#page-context-menu-button {
+  display: none !important;
+}
